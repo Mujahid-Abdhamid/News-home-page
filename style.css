@@ -47,15 +47,6 @@ body {
   font-size: 3.6rem;
 }
 
-.heading-tertiary {
-  font-size: 1.8rem;
-  color: hsl(36, 100%, 99%);
-}
-
-.margin-bt-sm {
-  margin-bottom: 1.8rem;
-}
-
 .margin-bt-md {
   margin-bottom: 2.4rem;
 }
@@ -83,9 +74,21 @@ body {
   display: flex;
   align-items: center;
   gap: 3.6rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
   color: hsl(236, 13%, 42%);
   font-size: 1.6rem;
   font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: hsl(5, 85%, 63%);
 }
 
 /* ****************** */
@@ -126,6 +129,22 @@ body {
   gap: 4rem;
 }
 
+.textbox-link:link,
+.textbox-link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(36, 100%, 99%);
+  text-decoration: none;
+  margin-bottom: 1.8rem;
+  transition: all 0.2s;
+}
+
+.textbox-link:hover,
+.textbox-link:active {
+  color: hsl(35, 77%, 62%);
+}
+
 .text-description {
   font-size: 1.4rem;
   line-height: 1.8;
@@ -146,9 +165,9 @@ body {
   font-weight: 500;
 }
 
-.cta-btn {
+.cta-btn:link,
+.cta-btn:visited {
   display: inline-block;
-  flex-grow: 0;
   background-color: hsl(5, 85%, 63%);
   color: hsl(36, 100%, 99%);
   font-size: 1.6rem;
@@ -157,6 +176,12 @@ body {
   text-transform: uppercase;
   text-align: center;
   padding: 1.6rem 4.8rem;
+  transition: all 0.3s;
+}
+
+.cta-btn:hover,
+.cta-btn:active {
+  background-color: hsl(240, 100%, 5%);
 }
 
 .features {
@@ -175,12 +200,21 @@ body {
   margin-bottom: 1.2rem;
 }
 
-.features-heading {
+.features-link:link,
+.features-link:visited {
+  display: inline-block;
   color: hsl(240, 100%, 5%);
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 1.6;
+  text-decoration: none;
+  transition: all 0.2s;
   margin-bottom: 1.2rem;
+}
+
+.features-link:hover,
+.features-link:active {
+  color: hsl(5, 85%, 63%);
 }
 
 .features-text {
